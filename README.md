@@ -83,6 +83,6 @@ Um eine große Userbase zu erreichen, soll Ihre Seite für Suchmaschinen (SEO) u
 ### Organisation
 
 - Eigenständige Bildung von 2-Personen ODER 3-Personen Teams
-- Deadline Team Anmeldung: 12.12.2022 8.59Uhr via Moodle
+- **Deadline Team Anmeldung**: 12.12.2022 8.59Uhr via Moodle
 - Jedes Team bekommt nach der Anmeldung Webspace auf dem Kursserver 132web.site zugeteilt. Anmeldung bitte ASAP!!
-- Deadline für Projektabgabe: 22.1.2023 via Moodle und Hochladen auf 132web.site
+- **Deadline für Projektabgabe**: 22.1.2023 via Moodle und Hochladen auf 132web.site
