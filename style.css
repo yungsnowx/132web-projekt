@@ -65,12 +65,18 @@ header h1 {
 	visibility: visible;
 }
 
+.grid-container {
+	margin: 8px 0;
+	display: grid;
+	grid-template: repeat(4, 1fr) / 100%;
+}
+
 .grid-container section {
 	background: rgba(0, 165, 255, 0.5);
 	padding: 20px;
 	text-align: center;
 	border-radius: 4px;
-	margin: 0.5em 3em;
+	margin: 4px 3em;
 }
 
 footer {
