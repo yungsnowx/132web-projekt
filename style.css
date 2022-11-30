@@ -102,6 +102,10 @@ footer p {
 		visibility: visible;
 	}
 
+	#checkbox:checked + label .menu {
+		height: 50px;
+	}
+
 	main {
 		display: grid;
 		grid-template: 50% 50% / 50% 50%;
