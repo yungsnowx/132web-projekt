@@ -1,11 +1,23 @@
 body {
 	margin: 0;
 	font-family: sans-serif;
+	background-color: rgb(200, 200, 200);
 }
 
 header h1 {
 	text-align: center;
+	vertical-align: middle;
 	color: dodgerblue;
+}
+
+header {
+	background-image: url("Main-Tafelbild.jpg");
+	padding: 1px;
+}
+
+header h1 {
+	-webkit-text-stroke: 1px white;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #checkbox {
@@ -31,7 +43,9 @@ header h1 {
 	width: 100%;
 	opacity: 0;
 	visibility: hidden;
-	border-bottom: 2px solid lightgrey;
+	background-color: rgba(200, 200, 200, 0.8);
+	border-radius: 10px;
+	margin-bottom: 2px;
 }
 
 .menu li:last-child {
@@ -44,7 +58,14 @@ header h1 {
 	width: 100%;
 	align-self: center;
 	text-decoration: none;
-	color: dodgerblue;
+	color: black;
+	font-weight: bold;
+	-webkit-text-stroke: 0.02em white;
+}
+
+.menu li a:hover {
+	background-color: rgba(0, 165, 255, 0.5);
+	border-radius: 10px;
 }
 
 .toggle {
@@ -57,7 +78,7 @@ header h1 {
 }
 
 #checkbox:checked + label .menu {
-	height: 226px;
+	height: 230px;
 }
 
 #checkbox:checked + label .menu li {
@@ -99,6 +120,7 @@ footer p {
 		justify-content: center;
 		height: 50px;
 		border-bottom: 0px solid;
+		margin-bottom: 10px;
 	}
 
 	.menu li {
@@ -106,6 +128,7 @@ footer p {
 		width: auto;
 		opacity: 1;
 		visibility: visible;
+		margin: 0 10px;	
 	}
 
 	#checkbox:checked + label .menu {
