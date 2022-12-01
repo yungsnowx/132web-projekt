@@ -57,7 +57,7 @@ header h1 {
 }
 
 #checkbox:checked + label .menu {
-	height: 200px;
+	height: 226px;
 }
 
 #checkbox:checked + label .menu li {
