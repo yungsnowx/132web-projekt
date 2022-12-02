@@ -2,22 +2,29 @@ body {
 	margin: 0;
 	font-family: sans-serif;
 	background-color: rgb(200, 200, 200);
+	display: grid;
+	grid-template-areas: "header"
+						 "nav"
+						 "main"
+						 "footer";
 }
 
 header h1 {
 	text-align: center;
 	vertical-align: middle;
 	color: dodgerblue;
+	-webkit-text-stroke: 1px white;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 header {
+	grid-area: header;
 	background-image: url("imgs/Main-Tafelbild.webp");
 	padding: 1px;
 }
 
-header h1 {
-	-webkit-text-stroke: 1px white;
-	background-color: rgba(0, 0, 0, 0.6);
+nav {
+	grid-area: nav;
 }
 
 #checkbox {
@@ -100,8 +107,13 @@ header h1 {
 	margin: 4px 3em;
 }
 
+main {
+	grid-area: main;
+}
+
 footer {
-	background-color: black;
+	grid-area: footer;
+	background-color: #333333;
 	color: white;
 }
 
@@ -120,7 +132,7 @@ footer p {
 		justify-content: center;
 		height: 50px;
 		border-bottom: 0px solid;
-		margin-bottom: 10px;
+		margin: 8px 0;
 	}
 
 	.menu li {
