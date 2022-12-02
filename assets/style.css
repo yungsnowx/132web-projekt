@@ -54,10 +54,6 @@ nav {
 	margin-bottom: 2px;
 }
 
-.menu li:last-child {
-	border-bottom: 0px solid;
-}
-
 .menu li a {
 	text-align: center;
 	padding: 16px 20px;
@@ -98,7 +94,12 @@ nav {
 	grid-template: repeat(4, 1fr) / 100%;
 }
 
-.grid-container section {
+.grid-container a {
+	color: black;
+	text-decoration: none;
+}
+
+.grid-container div {
 	background: rgba(0, 165, 255, 0.5);
 	padding: 20px;
 	text-align: center;
@@ -190,7 +191,7 @@ footer p {
 		align-content: center;
 	}
 
-	.grid-container section {
+	.grid-container a div {
 		margin: 4px;
 	}
 
