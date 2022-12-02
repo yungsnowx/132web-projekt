@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font-family: sans-serif;
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(230, 230, 230);
 	display: grid;
 	grid-template-areas: "header"
 						 "nav"
@@ -50,7 +50,6 @@ nav {
 	width: 100%;
 	opacity: 0;
 	visibility: hidden;
-	background-color: rgba(200, 200, 200, 0.8);
 	border-radius: 10px;
 	margin-bottom: 2px;
 }
@@ -82,6 +81,7 @@ nav {
 	cursor: pointer;
 	font-size: 20px;
 	background-color: lightgray;
+	margin-bottom: 16px;
 }
 
 #checkbox:checked + label .menu {
@@ -94,7 +94,6 @@ nav {
 }
 
 .grid-container {
-	margin: 8px 0;
 	display: grid;
 	grid-template: repeat(4, 1fr) / 100%;
 }
@@ -104,17 +103,44 @@ nav {
 	padding: 20px;
 	text-align: center;
 	border-radius: 4px;
-	margin: 4px 3em;
+	margin: 4px 0;
 }
 
 main {
 	grid-area: main;
 }
 
+.mid {
+	margin: 0 3em;
+}
+
+.rating {
+	border-radius: 8px;
+	background-color: white;
+	padding: 16px 0;
+	margin-top: 16px;
+}
+
+.rating h2 {
+	text-align: center;
+}
+
+.rating-items {
+	margin: 0 32px;
+	display: grid;
+	grid-template: repeat(3, 1fr) / 100%;
+	text-align: center;
+}
+
+.rating-item {
+	margin: 4px;
+}
+
 footer {
 	grid-area: footer;
 	background-color: #333333;
 	color: white;
+	margin-top: 16px;
 }
 
 footer p {
@@ -151,11 +177,14 @@ footer p {
 		padding: 0 20px;
 	}
 
+	.mid {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+
 	.grid-container {
 		display: grid;
 		grid-template: 50% 50% / 50% 50%;
-		max-width: 1200px;
-		margin: 0 auto;
 		margin-top: 8px;
 		padding: 0;
 		align-content: center;
@@ -163,5 +192,14 @@ footer p {
 
 	.grid-container section {
 		margin: 4px;
+	}
+
+	.rating {
+		margin-top: 16px;
+	}
+
+	.rating-items {
+		margin: 16px;
+		grid-template: 100% / repeat(3, 1fr);
 	}
 }
