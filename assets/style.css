@@ -40,6 +40,7 @@ nav {
 	margin: 0;
 	list-style-type: none;
 	height: 0;
+	transition-duration: 500ms;
 }
 
 .menu li {
@@ -52,6 +53,7 @@ nav {
 	visibility: hidden;
 	border-radius: 10px;
 	margin-bottom: 2px;
+	transition-duration: 200ms;
 }
 
 .menu li a {
@@ -63,6 +65,7 @@ nav {
 	color: black;
 	font-weight: bold;
 	-webkit-text-stroke: 0.02em white;
+	transition-duration: 500ms;
 }
 
 .menu li a:hover {
