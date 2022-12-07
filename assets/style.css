@@ -130,11 +130,16 @@ nav {
 }
 
 #thema-mathe {
-	background-color: dodgerblue;
+	background-image: url(/assets/imgs/mathe/maths_theme.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #thema-physik {
-	background-color: dodgerblue;
+	background-image: url(/assets/imgs/physik/physic_theme.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #thema-mathe-sdp {
