@@ -108,6 +108,7 @@ nav {
 	justify-content: center;
 	align-items: flex-end;
 	background-size: cover;
+	background-repeat: no-repeat;
 	text-align: center;
 	border-radius: 4px;
 	margin: 4px 0;
@@ -127,8 +128,7 @@ nav {
 }
 
 #thema1 {
-	background-image: url("imgs/tafel.webp");
-	/* filter: grayscale(100%); */
+	background-image: url("imgs/pythagoras_theme.webp");
 }
 
 #thema2 {
