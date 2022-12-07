@@ -82,7 +82,7 @@ nav {
 }
 
 #checkbox:checked + label .menu {
-	height: 270px;
+	height: 220px;
 }
 
 #checkbox:checked + label .menu li {
