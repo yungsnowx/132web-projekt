@@ -9,18 +9,16 @@ body {
 						 "footer";
 }
 
-header h1 {
-	text-align: center;
-	vertical-align: middle;
-	color: dodgerblue;
-	-webkit-text-stroke: 1px white;
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
 header {
+	text-align: center;
 	grid-area: header;
 	background-image: url("imgs/Main-Tafelbild.webp");
-	padding: 1px;
+}
+
+.imageheader {
+	margin: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 nav {
