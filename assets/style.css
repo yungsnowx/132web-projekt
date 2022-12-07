@@ -118,7 +118,10 @@ nav {
 
 .thema h2 {
 	padding: 4px;
+	margin: 0;
 	border-radius: 0 0 4px 4px;
+	background-color: rgba(230, 230, 230, 0.7);
+	width: 100%;
 	transition: padding 250ms, background-color 250ms;
 }
 
@@ -141,12 +144,6 @@ nav {
 
 #thema4 {
 	background-image: url("imgs/tafel.webp");
-}
-
-.thema h2 {
-	margin: 0;
-	background-color: rgba(230, 230, 230, 0.7);
-	width: 100%;
 }
 
 main {
