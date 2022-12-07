@@ -94,7 +94,6 @@ nav {
 
 .themen {
 	display: grid;
-	grid-template: repeat(4, 1fr) / 100%;
 }
 
 .themen a {
@@ -130,20 +129,20 @@ nav {
 	background-color: rgba(230, 230, 230, 0.9);
 }
 
-#thema1 {
-	background-image: url("imgs/pythagoras_theme.webp");
+#thema-mathe {
+	background-color: dodgerblue;
 }
 
-#thema2 {
-	background-image: url("imgs/tafel.webp");
+#thema-physik {
+	background-color: dodgerblue;
 }
 
-#thema3 {
-	background-image: url("imgs/tafel.webp");
+#thema-mathe-sdp {
+	background-image: url("imgs/mathe/pythagoras_theme.webp");
 }
 
-#thema4 {
-	background-image: url("imgs/tafel.webp");
+#thema-dummy {
+	background-image: url("imgs/mathe/tafel.webp");
 }
 
 main {
@@ -174,6 +173,26 @@ main {
 
 .rating-item {
 	margin: 4px;
+}
+
+input, textarea {
+	margin: 4px 10px 16px 0;
+	padding: 6px;
+	border: 2px solid grey;
+	border-radius: 6px;
+}
+
+button {
+	background-color: rgb(31, 143, 255);
+	color: white;
+	border-radius: 6px;
+	border: 0px solid;
+	padding: 8px 25px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(88, 171, 255);
 }
 
 footer {
