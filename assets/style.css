@@ -180,18 +180,33 @@ nav {
 	grid-area: loesung;
 }
 
-.taschenrechner {
-	border: solid 1px black;
-	display: grid;
+#pythagoras-loesung-flex {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	grid-template-columns: repeat(6, 50px);
-	grid-gap: 5px;
-	background-color: orange;
+	align-items: center; 
 }
 
-.taschenrechner > p {
+.taschenrechner-container {
 	border: solid 1px black;
+	display: grid;
+	justify-content: start;
+	grid-template-columns: repeat(6, 50px);
+	grid-template-rows: repeat(6, 50px);
+	grid-gap: 5px;
+	background-color: orange;
+	width: 325px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.taschenrechner-container > div {
+	border: solid 2px black;
+	border-radius: 10px;
 	color: white;
+	text-align: center;
+	font-size: 2em;
 }
 
 .tr-button {
@@ -200,10 +215,13 @@ nav {
 
 .eingegebener-term {
 	grid-column: 1 / -1;
+	background-color: white;
+
 }
 
 .ergebnis {
 	grid-column: 1 / -1;
+	background-color: white;
 }
 
 .tr-ziffer-button {
@@ -338,6 +356,13 @@ footer p {
 		padding: 2px;
 		grid-template-areas: "thema-erklaerung thema-erklaerung"
 							 "aufgabenstellung loesung";
+	}
+
+	#pythagoras-loesung-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.thema {
