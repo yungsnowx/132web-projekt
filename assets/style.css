@@ -148,6 +148,84 @@ nav {
 	background-image: url("imgs/mathe/tafel.webp");
 }
 
+/*Aufgabenblatt*/
+
+.aufgaben-container {
+	display: grid;
+	justify-content: stretch;
+	grid-gap: 5px;
+	padding: 5px;
+	grid-template-areas: "thema-erklaerung"
+						 "aufgabenstellung"
+						 "loesung";
+}
+
+.aufgaben-container > section {
+	border: solid 5px dodgerblue;
+	border-radius: 10px;
+	background-color: white;
+	text-align: center;
+	grid-auto-rows: minmax(auto, auto);
+}
+
+.themaerklaerung {
+	grid-area: thema-erklaerung;
+}
+
+.aufgabe {
+	grid-area: aufgabenstellung;
+}
+
+.loesungsbereich {
+	grid-area: loesung;
+}
+
+.taschenrechner {
+	border: solid 1px black;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(6, 50px);
+	grid-gap: 5px;
+	background-color: orange;
+}
+
+.taschenrechner > p {
+	border: solid 1px black;
+	color: white;
+}
+
+.tr-button {
+	background-color: gray;
+}
+
+.eingegebener-term {
+	grid-column: 1 / -1;
+}
+
+.ergebnis {
+	grid-column: 1 / -1;
+}
+
+.tr-ziffer-button {
+	background-color: rgb(59, 59, 59);
+}
+
+#tr-istgleich {
+	grid-column: 3 / 5;
+	background-color: blue;
+}
+
+#tr-cp {
+	grid-column: 5 / 7;
+	background-color: blue;
+}
+
+#tr-clear {
+	background-color: red;
+}
+
+/*Aufgabenblatt Ende*/
+
 main {
 	grid-area: main;
 }
@@ -251,6 +329,15 @@ footer p {
 		margin-top: 8px;
 		padding: 0;
 		align-content: center;
+	}
+
+	.aufgaben-container {
+		display: grid;
+		justify-content: stretch;
+		grid-gap: 5px;
+		padding: 2px;
+		grid-template-areas: "thema-erklaerung thema-erklaerung"
+							 "aufgabenstellung loesung";
 	}
 
 	.thema {
