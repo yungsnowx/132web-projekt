@@ -147,7 +147,9 @@ nav {
 #thema-dummy {
 	background-image: url("imgs/mathe/tafel.webp");
 }
-
+#thema-geometrie{
+	background-image: url("imgs/mathe/geocover.webp");
+}
 /*Aufgabenblatt*/
 
 .aufgaben-container {
