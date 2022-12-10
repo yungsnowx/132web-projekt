@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mathe-Nachhilfe</title>
 		<link rel="stylesheet" href="assets/style.css">
+        <script src="assets/script.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -56,26 +57,26 @@
                         <div class="taschenrechner-container">
                             <div class="eingegebener-term"></div>
                             <div class="ergebnis"></div>
-                            <div class="tr-ziffer-button">7</div> 
-                            <div class="tr-ziffer-button">8</div>
-                            <div class="tr-ziffer-button">9</div>
-                            <div class="tr-button">(</div>
-                            <div class="tr-button">)</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(7)">7</div> 
+                            <div class="tr-ziffer-button" onclick="calcInput(8)">8</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(9)">9</div>
+                            <div class="tr-button" onclick="calcInput('('))">(</div>
+                            <div class="tr-button" onclick="calcInput(')')">)</div>
                             <div class="tr-button" id="tr-clear">C</div>
-                            <div class="tr-ziffer-button">4</div>
-                            <div class="tr-ziffer-button">5</div>
-                            <div class="tr-ziffer-button">6</div>
-                            <div class="tr-button">+</div>
-                            <div class="tr-button">-</div>
-                            <div class="tr-button">*</div>
-                            <div class="tr-ziffer-button">1</div>
-                            <div class="tr-ziffer-button">2</div>
-                            <div class="tr-ziffer-button">3</div>
-                            <div class="tr-button">/</div>
-                            <div class="tr-button">W</div>
-                            <div class="tr-button">Q</div>
-                            <div class="tr-ziffer-button">0</div>
-                            <div class="tr-button">,</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(4)">4</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(5)">5</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(6)">6</div>
+                            <div class="tr-button" onclick="calcInput()">+</div>
+                            <div class="tr-button" onclick="calcInput(-)">-</div>
+                            <div class="tr-button" onclick="calcInput(*)">&times;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(1)">1</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(2)">2</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(3)">3</div>
+                            <div class="tr-button" onclick="calcInput('/')">÷</div>
+                            <div class="tr-button" onclick="calcInput()">&radic;</div>
+                            <div class="tr-button" onclick="calcInput('')">&sup2;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput()">0</div>
+                            <div class="tr-button" onclick="calcInput()">,</div>
                             <div class="tr-button" id="tr-istgleich">=</div>
                             <div class="tr-button" id="tr-cp">cp</div>
                         </div>
