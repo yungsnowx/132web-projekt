@@ -111,6 +111,7 @@ nav {
 	margin: 4px 0;
 	height: 18vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+	background-repeat: no-repeat;
 }
 
 .thema h2 {
@@ -149,6 +150,7 @@ nav {
 }
 #thema-geometrie{
 	background-image: url("imgs/mathe/geocover.webp");
+	background-position: center;
 }
 /*Aufgabenblatt*/
 
@@ -189,35 +191,30 @@ nav {
 	align-items: center;
 }
 
-.thema-erklaerung-flex-geo{
+.thema-erklaerung-flex-geo {
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
+	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 }
 
-#formeln-geo{
-	margin-right:auto;
+#geo-div {
+	
 }
 
+#erklaerung-geo{
+	border-radius: 10px;
+	margin: 10px;
+}
 
-#formeln-geo > img {
+.thema-erklaerung-flex > img {
 	width: 70%;
 	border: solid 2px #1e90ff;
 	border-radius: 10px;
 	margin: 10px;
-
 }
 
-#erklaerung-geo{
-	border: solid 2px black;
-	border-radius: 10px;
-	margin:10px;
-	width: 50%;
-
-}
-
-.thema-erklaerung-flex > img {
+.thema-erklaerung-flex-geo > img {
 	width: 70%;
 	border: solid 2px #1e90ff;
 	border-radius: 10px;
@@ -371,7 +368,7 @@ footer p {
 	padding: 4px;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 900px) {
 	.toggle {
 		display: none;
 	}
@@ -421,6 +418,7 @@ footer p {
 		padding: 2px;
 		grid-template-areas: "thema-erklaerung thema-erklaerung"
 							 "aufgabenstellung loesung";
+		grid-template-columns: 2fr 3fr;
 	}
 
 	.thema-erklaerung-flex {
@@ -431,10 +429,26 @@ footer p {
 	}
 
 	.thema-erklaerung-flex > img {
+		text-align: center;
 		width: 500px;
 		border: solid 2px #1e90ff;
 		border-radius: 10px;
+		margin: auto;
+	}
+
+	.thema-erklaerung-flex-geo {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
+
+	.thema-erklaerung-flex-geo > img {
+		border: solid 2px #1e90ff;
+		border-radius: 10px;
 		margin: 10px;
+		min-width: 50%;
+		max-height: 500px;
 	}
 
 	#pythagoras-loesung-flex {
