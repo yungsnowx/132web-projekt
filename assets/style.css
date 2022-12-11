@@ -218,7 +218,7 @@ nav {
 	border-radius: 10px;
 }
 
-.taschenrechner-container > div {
+.taschenrechner-container > [class^="tr"] { 
 	border: solid 2px black;
 	border-radius: 10px;
 	color: white;
@@ -230,15 +230,15 @@ nav {
 	background-color: gray;
 }
 
-.eingegebener-term {
+#eingegebener-term, #ergebnis {
+	border: solid 2px black;
+	border-radius: 10px;
+	color: black;
+	font-size: 2em;
 	grid-column: 1 / -1;
 	background-color: white;
-
-}
-
-.ergebnis {
-	grid-column: 1 / -1;
-	background-color: white;
+	text-align: end;
+	padding-right: 5px;
 }
 
 .tr-ziffer-button {
@@ -253,10 +253,16 @@ nav {
 #tr-cp {
 	grid-column: 5 / 7;
 	background-color: blue;
+	font-size: 1em;
 }
 
 #tr-clear {
 	background-color: red;
+}
+
+#solutionbox {
+	font-size: 1.5em;
+	color: black;
 }
 
 /*Aufgabenblatt Ende*/
