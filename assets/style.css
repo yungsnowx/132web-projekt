@@ -192,6 +192,34 @@ nav {
 	align-items: center;
 }
 
+.thema-erklaerung-flex-geo{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+#formeln-geo{
+	margin-right:auto;
+}
+
+
+#formeln-geo > img {
+	width: 70%;
+	border: solid 2px #1e90ff;
+	border-radius: 10px;
+	margin: 10px;
+
+}
+
+#erklaerung-geo{
+	border: solid 2px black;
+	border-radius: 10px;
+	margin:10px;
+	width: 50%;
+
+}
+
 .thema-erklaerung-flex > img {
 	width: 70%;
 	border: solid 2px #1e90ff;
