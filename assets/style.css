@@ -200,6 +200,25 @@ nav {
 	margin: 20px;
 }
 
+.aufgabe-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+.aufgabe-flex > img {
+	width: 80%;
+}
+
+mark {
+	background-color: lawngreen;
+	border-radius: 10px;
+	padding: 2px;
+}
+
 #pythagoras-loesung-flex {
 	display: flex;
 	flex-direction: column;
@@ -415,6 +434,7 @@ footer p {
 		flex-direction: row;
 		align-items: center;
 		flex-wrap: wrap;
+		justify-content: center;
 		justify-content: space-around;
 	}
 
