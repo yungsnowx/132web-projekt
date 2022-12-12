@@ -29,10 +29,24 @@ function checkSolution(aufgabe) {
         case 'pythagoras1':
             pythagoras1(solutionbox);
             break;
+        case 'ohmischesgesetz1':
+            ohmischesgesetz1(solutionbox);
+            break;
     }
 }
 
 function pythagoras1(solutionbox) {
+    let eingabe = solutionbox.value;
+    if (eingabe == 101) {
+        solutionbox.style.border = 'solid 2px lawngreen';
+        solutionbox.style.backgroundColor = 'rgba(0, 200, 0, 0.2)';
+    }else{
+        solutionbox.style.border = 'solid 2px red';
+        solutionbox.style.backgroundColor = 'rgba(200, 0, 0, 0.2)';
+    }
+}
+
+function ohmischesgesetz1(solutionbox) {
     let eingabe = solutionbox.value;
     if (eingabe == 101) {
         solutionbox.style.border = 'solid 2px lawngreen';
