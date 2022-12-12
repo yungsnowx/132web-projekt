@@ -22,3 +22,23 @@ function calcSolution() {
 function copySolution() {
     document.getElementById("solutionbox").value = document.getElementById("ergebnis").innerHTML;
 }
+
+function checkSolution(aufgabe) {
+    let solutionbox = document.getElementById("solutionbox");
+    switch (aufgabe) {
+        case 'pythagoras1':
+            pythagoras1(solutionbox);
+            break;
+    }
+}
+
+function pythagoras1(solutionbox) {
+    let eingabe = solutionbox.value;
+    if (eingabe == 101) {
+        solutionbox.style.border = 'solid 2px lawngreen';
+        solutionbox.style.backgroundColor = 'rgba(0, 200, 0, 0.2)';
+    }else{
+        solutionbox.style.border = 'solid 2px red';
+        solutionbox.style.backgroundColor = 'rgba(200, 0, 0, 0.2)';
+    }
+}
