@@ -196,6 +196,10 @@ nav {
 	margin: 10px;
 }
 
+.thema-erklaerprosa {
+	margin: 20px;
+}
+
 #pythagoras-loesung-flex {
 	display: flex;
 	flex-direction: column;
