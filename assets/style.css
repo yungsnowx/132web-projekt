@@ -12,7 +12,7 @@ body {
 header {
 	text-align: center;
 	grid-area: header;
-	background-image: url("imgs/Main-Tafelbild.webp");
+	background-image: url("imgs/header.webp");
 }
 
 .imageheader {
@@ -129,7 +129,7 @@ nav {
 }
 
 #thema-mathe {
-	background-image: url("imgs/mathe/maths_theme.webp");
+	background-image: url("imgs/mathe/mathe-cover.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -142,14 +142,14 @@ nav {
 }
 
 #thema-mathe-sdp {
-	background-image: url("imgs/mathe/pythagoras_theme.webp");
+	background-image: url("imgs/mathe/pythagoras_cover.webp");
 }
 
-#thema-dummy {
+.thema-dummy {
 	background-image: url("imgs/mathe/tafel.webp");
 }
 #thema-geometrie{
-	background-image: url("imgs/mathe/geocover.webp");
+	background-image: url("imgs/mathe/geo-cover.jpg");
 	background-position: center;
 }
 /*Aufgabenblatt*/
@@ -199,7 +199,7 @@ nav {
 }
 
 #geo-div {
-	
+
 }
 
 #erklaerung-geo{
