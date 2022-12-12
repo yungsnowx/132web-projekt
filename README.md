@@ -20,7 +20,7 @@ Um eine große Userbase zu erreichen, soll Ihre Seite für Suchmaschinen (SEO) u
 
 ### Seitendesign und Layout
 
-- Die Webseite soll aus **mindestens 4 individuellen Einzelseiten** bestehen, die mit einem Navigationsmenu untereinander verlinkt sind.
+- Die Webseite soll aus **mindestens 4 individuellen Einzelseiten** bestehen, die mit einem Navigationsmenü untereinander verlinkt sind.
 - Jede Einzelseite soll Inhalte mit Mehrwert präsentieren.
 - Auf mindestens einer Seite hat der Benutzer die Möglichkeit, sein neuerlerntes Wissen, interaktiv zu überprüfen bzw. durch interaktive Aufgaben/Spiele weiter zu vertiefen
 - Auf mindestens einer Seite besteht die Möglichkeit, Kontakt zu dem Webmaster aufzunehmen und Feedback zu senden

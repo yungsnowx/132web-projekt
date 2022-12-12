@@ -11,7 +11,7 @@ function calcSolution() {
     let term = document.getElementById("eingegebener-term").innerHTML;
 
     term = term.replaceAll(',', '.');                  // , mit . ersetzen
-    term = term.replaceAll('\u221A' , 'Math.sqrt');    // Wurzelzecihen mit Wurzelfunktion ersetzen
+    term = term.replaceAll('\u221A' , 'Math.sqrt');    // Wurzelzeichen mit Wurzelfunktion ersetzen
     term = term.replaceAll('\u00D7' , '*');            // Malzeichen mit * ersetzen
     term = term.replaceAll('\u00F7' , '/');            // Divisionszeichen mit / ersetzen
     term = term.replaceAll('\u00B2' , '**2');          // hochgestellte 2 mit **2 ersetzen
