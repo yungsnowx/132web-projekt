@@ -437,6 +437,14 @@ footer p {
 	padding: 4px;
 }
 
+.thema-erklarrprosa > h3{
+	color:#1e90ff;
+}
+
+.thema-erklarrprosa > h4{
+	text-align: left;
+}
+
 @media screen and (min-width: 900px) {
 	.toggle {
 		display: none;
@@ -517,6 +525,10 @@ footer p {
 		border: solid 2px #1e90ff;
 		border-radius: 10px;
 		margin: 20px;
+		margin: 10px;
+		min-width: 50%;
+		max-height: 500px;
+		width: 440px;
 	}
 
 	#pythagoras-loesung-flex {
@@ -545,4 +557,13 @@ footer p {
 		margin: 16px;
 		grid-template: 100% / repeat(3, 1fr);
 	}
+}
+
+
+.thema-erklarrprosa > h3{
+	color:#1e90ff;
+}
+
+.thema-erklarrprosa > h4{
+	text-align: left;
 }
