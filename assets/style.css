@@ -150,6 +150,10 @@ nav {
 #thema-geometrie{
 	background-image: url("imgs/mathe/geo-cover.jpg");
 }
+
+#thema-lk {
+	background-image: url("imgs/physik/lk-theme.webp");
+}
 /*Aufgabenblatt*/
 
 .aufgaben-container {
