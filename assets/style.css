@@ -305,6 +305,10 @@ mark {
 
 /*lineare Kinematik*/
 
+#notwendige-formeln {
+	margin: 20px;
+}
+
 #lk-aufgabe-flex {
 	display: flex;
 	flex-direction: column;
@@ -466,13 +470,14 @@ footer p {
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.thema-erklaerung-flex > img {
 		width: 500px;
 		border: solid 2px #1e90ff;
 		border-radius: 10px;
-		margin: 10px;
+		margin: 20px;
 	}
 
 	#pythagoras-loesung-flex {
