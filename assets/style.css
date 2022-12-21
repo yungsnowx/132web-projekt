@@ -303,7 +303,8 @@ mark {
 
 /*Aufgabenblatt Ende*/
 
-/*lineare Kinematik Aufgabe*/
+/*lineare Kinematik*/
+
 #lk-aufgabe-flex {
 	display: flex;
 	flex-direction: column;
