@@ -159,7 +159,7 @@ nav {
 	padding: 5px;
 	grid-template-areas: "thema-erklaerung"
 						 "aufgabenstellung"
-						 "loesung";
+						 "loesung";	
 }
 
 .aufgaben-container > section {
@@ -167,7 +167,6 @@ nav {
 	border-radius: 10px;
 	background-color: white;
 	text-align: center;
-	grid-auto-rows: minmax(auto, auto);
 }
 
 .themaerklaerung {
@@ -214,7 +213,7 @@ nav {
 }
 
 mark {
-	background-color: lawngreen;
+	background-color: rgba(124, 252, 0, 0.5);
 	border-radius: 10px;
 	padding: 2px;
 }
@@ -299,6 +298,47 @@ mark {
 }
 
 /*Aufgabenblatt Ende*/
+
+/*lineare Kinematik Aufgabe*/
+#lk-aufgabe-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#lk-road {
+	margin-top: 10%;
+	width: 100%;
+	height: 100px;
+	background-color: rgb(82, 82, 82);
+	background: linear-gradient(90deg,
+	                          rgba(255, 255, 255, 0.7), 
+							  rgba(0, 0, 0, 0.2), 
+							  rgba(0, 0, 0, 0.4),
+							  rgba(0, 0, 0, 0.6),
+							  rgba(0, 0, 0, 0.8));
+}
+
+#lk-running-boy {
+	position: absolute;
+	height: 150px;
+	width: calc(472px / 5);
+	background: url(../assets/imgs/physik/lk-running-man.png);
+	overflow: hidden;
+	transform: translateY(-80px) translateX(150px);
+	animation: animateBoy 0.5s steps(5) 20;
+}
+
+@keyframes animateBoy {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: 481px;
+	}
+}
 
 main {
 	grid-area: main;
@@ -432,10 +472,9 @@ footer p {
 	#pythagoras-loesung-flex {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
 		flex-wrap: wrap;
-		justify-content: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	[class^="tr"]:hover {
