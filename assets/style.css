@@ -526,9 +526,9 @@ footer p {
 		border-radius: 10px;
 		margin: 20px;
 		margin: 10px;
-		min-width: 50%;
+		min-width: 40%;
 		max-height: 500px;
-		width: 440px;
+		width: 400px;
 	}
 
 	#pythagoras-loesung-flex {
