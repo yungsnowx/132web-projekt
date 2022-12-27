@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ohmsches Gesetz - Mathezweig</title>
+		<link rel="stylesheet" href="../assets/style.css">
+        <script src="../assets/script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="imageheader">
+				<img src="../assets/imgs/logo.webp" width="400" alt="Header-Hintergrund">
+			</div>
+		</header>
+		<nav>
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">
+				<ul class="menu">
+					<li><a href="../">Homepage</a></li>
+					<li><a href="./">Mathematik</a></li>
+					<li><a href="../physik/">Physik</a></li>
+					<li><a href="../feedback.html">Feedback</a></li>
+				</ul>
+				<span class="toggle">☰</span>
+			</label>
+		</nav>
+		<main>
+            <div class="aufgaben-container">
+                <section class="themaerklaerung">
+                    <h2>Ohmsches Gesetz</h2>
+                    <div class="thema-erklaerung-flex">
+                        
+                    </div>
+                    <p class="thema-erklaerprosa">
+                        Das Ohm'sche Gesetz beschreibt eine physikalische Beziehung zwischen Stromstärke, elektrischem Widerstand und elektrischem Spannungsfall in elektrischen Leitungen. Die Gleichung, die das Ohm'sche Gesetz beschreibt, lautet:
+<br>
+                        I = U / R
+<br>
+                        wobei I die Stromstärke in Ampere (A), U die elektrische Spannung in Volt (V) und R der elektrische Widerstand in Ohm (Ω) ist.
+                    </p>
+                </section>
+                <section class="aufgabe">
+                    <h2>Aufgabe</h2>
+                        <div class="aufgabe-flex">
+                            <p>Ein elektrischer Widerstand hat einen Wert von 100 Ohm. 
+                               Wenn eine elektrische Spannung von 12 Volt angelegt wird, 
+                               wie groß ist die durch den Widerstand fließende Stromstärke?<br><br>
+                               Viel Erfolg!
+                            </p>
+                        </div>
+                </section>
+                <section class="loesungsbereich">
+                    <h2>Lösung</h2>
+                    <div id="pythagoras-loesung-flex">
+                        <div class="taschenrechner-container">
+                            <div id="eingegebener-term"></div>
+                            <div id="ergebnis"></div>
+                            <div class="tr-ziffer-button" onclick="calcInput(7)">7</div> 
+                            <div class="tr-ziffer-button" onclick="calcInput(8)">8</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(9)">9</div>
+                            <div class="tr-button" onclick="calcInput('&lpar;')">(</div>
+                            <div class="tr-button" onclick="calcInput('&rpar;')">)</div>
+                            <div class="tr-button" id="tr-clear" onclick="calcClear()">C</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(4)">4</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(5)">5</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(6)">6</div>
+                            <div class="tr-button" onclick="calcInput('+')">+</div>
+                            <div class="tr-button" onclick="calcInput('-')">-</div>
+                            <div class="tr-button" onclick="calcInput('&times;')">&times;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(1)">1</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(2)">2</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(3)">3</div>
+                            <div class="tr-button" onclick="calcInput('÷')">÷</div>
+                            <div class="tr-button" onclick="calcInput('&radic;')">&radic;</div>
+                            <div class="tr-button" onclick="calcInput('&sup2;')">&sup2;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(0)">0</div>
+                            <div class="tr-button" onclick="calcInput(',')">,</div>
+                            <div class="tr-button" id="tr-istgleich" onclick="calcSolution()">=</div>
+                            <div class="tr-button" id="tr-cp" onclick="copySolution()">als Lösung kopieren</div>
+                        </div>
+                        <div>
+                            <label for="solutionbox">Deine Lösung:</label><br>
+                            <input type="text" name="solution" id="solutionbox"><br>
+                            <button type="submit" onclick="checkSolution('pythagoras1')">Fertig</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+		</main>
+		<footer>Projektarbeit Webentwicklung</footer>
+	</body>
+</html>

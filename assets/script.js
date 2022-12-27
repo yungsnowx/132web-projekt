@@ -27,16 +27,14 @@ function checkSolution(aufgabe) {
     let solutionbox = document.getElementById("solutionbox");
     switch (aufgabe) {
         case 'pythagoras1':
-            pythagoras1(solutionbox);
+            setAnswerButton(solutionbox, solutionbox.value == 101);
             break;
         case 'geometrie':
-            geometrie(solutionbox);
+            setAnswerButton(solutionbox, solutionbox.value == 10);
             break;
+        case 'ohmschesgesetz':
+            setAnswerButton(solutionbox, solutionbox.value == 0.12)
     }
-}
-
-function pythagoras1(solutionbox) {
-    setAnswerButton(solutionbox, solutionbox.value == 101);
 }
 
 function setAnswerButton(solutionbox, isRight) {
