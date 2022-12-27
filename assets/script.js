@@ -54,3 +54,7 @@ function setAnswerButton(solutionbox, isRight) {
         solutionbox.style.backgroundColor = 'rgba(200, 0, 0, 0.2)';
     }
 }
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+}
