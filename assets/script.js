@@ -29,6 +29,9 @@ function checkSolution(aufgabe) {
         case 'pythagoras1':
             pythagoras1(solutionbox);
             break;
+        case 'geometrie':
+            geometrie(solutionbox);
+            break;
     }
 }
 

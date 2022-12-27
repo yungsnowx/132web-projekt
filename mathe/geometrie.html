@@ -30,21 +30,69 @@
             <div class="aufgaben-container">
                 <section class="themaerklaerung">
                     <h2>Geometrie</h2>
-                    <div class="thema-erklaerung-flex">
-
+                    <div class="thema-erklaerung-flex-geo">
+                        <img src="../assets/imgs/mathe/formeln.webp" id="geo-bild" alt="formelsammlung">
+                        <div class="thema-erklarrprosa">
+                            <h3> Was ist Geometrie ?  </h3>
+                            <p>In der Mathematik ist die Geometrie ein Teilbereich, der sich mit dem Messen, Berechnen und Konstruieren von Winkeln, Abständen und Figuren beschäftigt.</p>
+                            <p>Hier stellen wir euch die wichtigen Körper vor und wie man ihr Flaecheninhalt und Umfang berechnet.</p>
+                            <h4> Quadrat :</h4>
+                            <p>Das Quadrat ist ein Viereck, bei welchem alle vier Seiten gleich lang sind und dazu parallel, also es hat 4 rechte Winkel. <br></p>
+                            <strong> Umfang: U = 4·a <br> Flaeche: A = a · a</strong>
+                            <h4> Rechteck :</h4>
+                            <p>Ein Rechteck ist ein Viereck, dessen Seiten alle parallel sind und es daher 4 rechte Winkel hat. Eine spezielle Form des Rechtecks ist das Quadrat.</p>
+                            <strong>Umfang: U = 2·a+2·b <br> Flaeche: A = a · b</strong>
+                            <h4>Dreieck: </h4>
+                            <p>Ein Dreieck ist eine Figur, die aus drei Punkten besteht, welche durch Strecken miteinander verbunden sind. <br> Hier seht ihr ein Dreieck, welches aus den Punkten A, B und C besteht.</p>
+                            <strong>Umfang: U = a+b+c <br> Flaeche: A = 0,5 · a · b</strong>
+                            <h4>Kreis: </h4>
+                            <p>Ein Kreis hat keine Ecken, besitzt dafür einen Mittelpunkt, Radius und Durchmesser. Der Radius ist der Abstand von außen bis zum Mittelpunkt. Der Durchmesser ist die Breite des Kreises und ist einfach der doppelte Radius.</p>
+                            <strong>Umfang: U = 2·π·r <br> Fläche: A = π · r2</strong>
+                        </div>
                     </div>
                 </section>
                 <section class="aufgabe">
-                    <h2>Aufgabe</h2>
+                    <h2>Aufgabe 1</h2>
+                    <h3>Quadrat:</h3>
+                    <p> Berechnen Sie den Umfang eines Quadrates mit den Seiten a = 6cm</p><br>
+                    <h2>Aufgabe 2</h2>
+                    <h3>Dreieck:</h3>
+                    <p> Ein Dreieck mit dem Umfang von 19cm hat die Seiten a = 5cm, b = 6cm.</p>
+                    <p> Berechnen Sie die fehlende Seite C</p>
+                    <h2>Aufgabe 3</h2>
+                    <h3>Kreis:</h3>
+                    <p> Durchmesser : 10cm</p>
+                    <p> Berechnen Sie den Flächeninhalt des Kreises</p>
                 </section>
+
+
                 <section class="loesungsbereich">
-                    <h2>Lösung</h2>
+                    <h2>Lösung 1</h2>
                     <div id="pythagoras-loesung-flex">
 
                         <div>
                             <label for="solutionbox">Deine Lösung:</label><br>
                             <input type="text" name="solution" id="solutionbox"><br>
                         </div>
+
+                    </div>
+                    <h2>Lösung 2</h2>
+                    <div id="pythagoras-loesung-flex">
+                        <div>
+                            <label for="solutionbox">Deine Lösung:</label><br>
+                            <input type="text" name="solution" id="solutionbox"><br>
+                        </div>
+
+                    </div><br>
+                    <h2>Lösung 3</h2>
+                    <div id="pythagoras-loesung-flex">
+
+                        <div>
+                            <label for="solutionbox">Deine Lösung:</label><br>
+                            <input type="text" name="solution" id="solutionbox"><br><br>
+                            <button type="submit" onclick="checkSolution('geometrie')">Fertig</button>
+                        </div>
+
                     </div>
                 </section>
             </div>

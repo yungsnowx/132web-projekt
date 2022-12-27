@@ -111,6 +111,7 @@ nav {
 	margin: 4px 0;
 	height: 18vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+	background-repeat: no-repeat;
 }
 
 .thema h2 {
@@ -153,6 +154,7 @@ nav {
 
 #thema-lk {
 	background-image: url("imgs/physik/lk-theme.webp");
+	background-position: center;
 }
 /*Aufgabenblatt*/
 
@@ -163,7 +165,7 @@ nav {
 	padding: 5px;
 	grid-template-areas: "thema-erklaerung"
 						 "aufgabenstellung"
-						 "loesung";	
+						 "loesung";
 }
 
 .aufgaben-container > section {
@@ -180,6 +182,9 @@ nav {
 .aufgabe {
 	grid-area: aufgabenstellung;
 }
+.aufgabe2 {
+	grid-area: aufgabenstellung;
+}
 
 .loesungsbereich {
 	grid-area: loesung;
@@ -192,7 +197,30 @@ nav {
 	align-items: center;
 }
 
+.thema-erklaerung-flex-geo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+#geo-div {
+
+}
+
+#erklaerung-geo{
+	border-radius: 10px;
+	margin: 10px;
+}
+
 .thema-erklaerung-flex > img {
+	width: 70%;
+	border: solid 2px #1e90ff;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.thema-erklaerung-flex-geo > img {
 	width: 70%;
 	border: solid 2px #1e90ff;
 	border-radius: 10px;
@@ -323,8 +351,8 @@ mark {
 	width: 100%;
 	height: 100px;
 	background: linear-gradient(90deg,
-	                          rgba(255, 255, 255, 0.7), 
-							  rgba(0, 0, 0, 0.2), 
+	                          rgba(255, 255, 255, 0.7),
+							  rgba(0, 0, 0, 0.2),
 							  rgba(0, 0, 0, 0.4),
 							  rgba(0, 0, 0, 0.6),
 							  rgba(0, 0, 0, 0.8));
@@ -412,7 +440,15 @@ footer p {
 	padding: 4px;
 }
 
-@media screen and (min-width: 620px) {
+.thema-erklarrprosa > h3{
+	color:#1e90ff;
+}
+
+.thema-erklarrprosa > h4{
+	text-align: left;
+}
+
+@media screen and (min-width: 900px) {
 	.toggle {
 		display: none;
 	}
@@ -474,10 +510,28 @@ footer p {
 	}
 
 	.thema-erklaerung-flex > img {
+		text-align: center;
 		width: 500px;
 		border: solid 2px #1e90ff;
 		border-radius: 10px;
+		margin: auto;
+	}
+
+	.thema-erklaerung-flex-geo {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
+
+	.thema-erklaerung-flex-geo > img {
+		border: solid 2px #1e90ff;
+		border-radius: 10px;
 		margin: 20px;
+		margin: 10px;
+		min-width: 40%;
+		max-height: 500px;
+		width: 400px;
 	}
 
 	#pythagoras-loesung-flex {
@@ -506,4 +560,13 @@ footer p {
 		margin: 16px;
 		grid-template: 100% / repeat(3, 1fr);
 	}
+}
+
+
+.thema-erklarrprosa > h3{
+	color:#1e90ff;
+}
+
+.thema-erklarrprosa > h4{
+	text-align: left;
 }
