@@ -68,12 +68,46 @@
                                 <div id="lk-running-boy"> 
                                 </div>
                             </div>
+                            <p>
+                                <ol>
+                                    <li> 
+                                        Marcel-Fritz Lahr hat etwas verschlafen und muss sich nun beeilen
+                                        seinen Bus zu bekommen, der in 6 min abfährt.<br>
+                                        Er ist momentan 1,2 km von der Haltestelle entfernt.<br>
+                                        Wie schnell muss er laufen um den Bus zu erreichen?
+                                    </li>
+                                    <li>
+                                        Nach 4 min legt er eine Durchschnittsgeschwindigkeit von 14 km/h an den Tag.<br>
+                                        <ol type="a">
+                                            <li>
+                                                Wie weit ist er gekommen?
+                                            </li> 
+                                            <li>
+                                                Schafft er es (wenn er so weiter macht) ?
+                                            </li>
+  
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </p>
                             <!--ANIMATION ENDE-->
                         </div>
                 </section>
                 <section class="loesungsbereich">
                     <h2>Lösung</h2>
                     <div id="pythagoras-loesung-flex">
+                        <div>
+                            <label for="solutionbox">Deine Lösung zu Aufgabe 1:</label><br>
+                            <input type="text" name="solution" id="solutionbox"><br>
+                            <label for="solutionbox">Deine Lösung zu Aufgabe 2a:</label><br>
+                            <input type="text" name="solution" id="solutionbox"><br>
+                            <label for="solutionbox">Deine Lösung zu Aufgabe 2b:</label><br>
+                            <input type="radio" id="lk-2b-ja" name="lk-2b" value="lk-2b-ja">
+                            <label for="lk-2b-ja">Ja</label><br>
+                            <input type="radio" id="lk-2b-nein" name="lk-2b" value="lk-2b-nein">
+                            <label for="lk-2b-nein">Nein</label><br>
+                            <button type="submit" onclick="checkSolution('pythagoras1')">Fertig</button>
+                        </div>
                     </div>
                 </section>
             </div>
