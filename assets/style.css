@@ -182,6 +182,9 @@ nav {
 .aufgabe {
 	grid-area: aufgabenstellung;
 }
+.aufgabe2 {
+	grid-area: aufgabenstellung;
+}
 
 .loesungsbereich {
 	grid-area: loesung;
