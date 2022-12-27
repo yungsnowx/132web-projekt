@@ -181,13 +181,12 @@ nav {
 
 .aufgabe {
 	grid-area: aufgabenstellung;
-}
-.aufgabe2 {
-	grid-area: aufgabenstellung;
+	padding: 16px;
 }
 
 .loesungsbereich {
 	grid-area: loesung;
+	padding: 16px;
 }
 
 .thema-erklaerung-flex {
@@ -322,7 +321,7 @@ mark {
 	background-color: red;
 }
 
-#solutionbox {
+.solutionbox {
 	font-size: 1.5em;
 	color: black;
 	margin: 10px auto;

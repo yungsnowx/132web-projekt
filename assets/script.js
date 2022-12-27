@@ -24,16 +24,17 @@ function copySolution() {
 }
 
 function checkSolution(aufgabe) {
-    let solutionbox = document.getElementById("solutionbox");
     switch (aufgabe) {
         case 'pythagoras1':
-            setAnswerButton(solutionbox, solutionbox.value == 101);
+            setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 101);
             break;
         case 'geometrie':
-            setAnswerButton(solutionbox, solutionbox.value == 10);
+            setAnswerButton(document.getElementById("solutionbox1"), document.getElementById("solutionbox1").value == 24);
+            setAnswerButton(document.getElementById("solutionbox2"), document.getElementById("solutionbox2").value == 8);
+            setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 78.5);
             break;
         case 'ohmschesgesetz':
-            setAnswerButton(solutionbox, solutionbox.value == 0.12)
+            setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 0.12)
     }
 }
 
