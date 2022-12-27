@@ -317,6 +317,10 @@ mark {
 	background-color: red;
 }
 
+.radiobox {
+	background-color: green;
+}
+
 .solutionbox {
 	font-size: 1.5em;
 	color: black;

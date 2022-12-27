@@ -41,6 +41,8 @@ function checkSolution(aufgabe) {
             setAnswerButton(document.getElementById("solutionbox5"), document.getElementById("solutionbox5").value == 3.33);
             setAnswerButton(document.getElementById("solutionbox6"), document.getElementById("solutionbox6").value == 0.93);
 
+            setAnswerRadioButton(document.getElementById("lk-2b-ja"), document.getElementById("lk-2b-nein"), document.getElementById("lk-2b-ja").checked);
+
             break;
     }
 }
@@ -52,6 +54,14 @@ function setAnswerButton(solutionbox, isRight) {
     } else {
         solutionbox.style.border = 'solid 2px red';
         solutionbox.style.backgroundColor = 'rgba(200, 0, 0, 0.2)';
+    }
+}
+
+function setAnswerRadioButton(radio1, radio2, isRight) {
+    if (isRight) {
+        radio1.style.accentColor = 'green';
+    } else {
+        radio2.style.accentColor = 'red';
     }
 }
 
