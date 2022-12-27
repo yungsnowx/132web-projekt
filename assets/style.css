@@ -149,7 +149,7 @@ nav {
 	background-image: url("imgs/mathe/tafel.webp");
 }
 #thema-geometrie{
-	background-image: url("imgs/mathe/geo-cover.jpg");
+	background-image: url("imgs/mathe/geometrie-cover.webp");
 }
 
 #thema-lk {
@@ -201,10 +201,6 @@ nav {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-}
-
-#geo-div {
-
 }
 
 #erklaerung-geo{
