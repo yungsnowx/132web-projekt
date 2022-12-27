@@ -34,7 +34,13 @@ function checkSolution(aufgabe) {
             setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 78.5);
             break;
         case 'ohmschesgesetz':
-            setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 0.12)
+            setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 0.12);
+            break;
+        case 'kinematik' :
+            setAnswerButton(document.getElementById("solutionbox4"), document.getElementById("solutionbox4").value == 12);
+            setAnswerButton(document.getElementById("solutionbox5"), document.getElementById("solutionbox5").value == 0.93);
+
+            break;
     }
 }
 
