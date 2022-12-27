@@ -22,3 +22,12 @@ function calcSolution() {
 function copySolution() {
     document.getElementById("solutionbox").value = document.getElementById("ergebnis").innerHTML;
 }
+
+function checkSolution(aufgabe) {
+    let solutionbox = document.getElementById("solutionbox");
+    switch (aufgabe) {
+        case 'geometrie':
+            geometrie(solutionbox);
+            break;
+    }
+}
