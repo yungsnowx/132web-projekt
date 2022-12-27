@@ -38,7 +38,8 @@ function checkSolution(aufgabe) {
             break;
         case 'kinematik' :
             setAnswerButton(document.getElementById("solutionbox4"), document.getElementById("solutionbox4").value == 12);
-            setAnswerButton(document.getElementById("solutionbox5"), document.getElementById("solutionbox5").value == 0.93);
+            setAnswerButton(document.getElementById("solutionbox5"), document.getElementById("solutionbox5").value == 3.33);
+            setAnswerButton(document.getElementById("solutionbox6"), document.getElementById("solutionbox6").value == 0.93);
 
             break;
     }
