@@ -96,24 +96,43 @@
                     </div>
                 </section>
                 <section class="loesungsbereich">
-
-                        <h2>Lösung 1</h2>
+                    <div id="pythagoras-loesung-flex">
+                        <div class="taschenrechner-container">
+                            <div id="eingegebener-term"></div>
+                            <div id="ergebnis"></div>
+                            <div class="tr-ziffer-button" onclick="calcInput(7)">7</div> 
+                            <div class="tr-ziffer-button" onclick="calcInput(8)">8</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(9)">9</div>
+                            <div class="tr-button" onclick="calcInput('&lpar;')">(</div>
+                            <div class="tr-button" onclick="calcInput('&rpar;')">)</div>
+                            <div class="tr-button" id="tr-clear" onclick="calcClear()">C</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(4)">4</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(5)">5</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(6)">6</div>
+                            <div class="tr-button" onclick="calcInput('+')">+</div>
+                            <div class="tr-button" onclick="calcInput('-')">-</div>
+                            <div class="tr-button" onclick="calcInput('&times;')">&times;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(1)">1</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(2)">2</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(3)">3</div>
+                            <div class="tr-button" onclick="calcInput('÷')">÷</div>
+                            <div class="tr-button" onclick="calcInput('&radic;')">&radic;</div>
+                            <div class="tr-button" onclick="calcInput('&sup2;')">&sup2;</div>
+                            <div class="tr-ziffer-button" onclick="calcInput(0)">0</div>
+                            <div class="tr-button" onclick="calcInput(',')">,</div>
+                            <div class="tr-button" id="tr-istgleich" onclick="calcSolution()">=</div>
+                            <div class="tr-button" id="tr-cp" onclick="copySolution()">als Lösung kopieren</div>
+                        </div>
                         <div>
-                            <label for="solutionbox1">Deine Lösung:</label><br>
+                            <label for="solutionbox1">Deine Lösung zu Aufgabe 1:</label><br>
                             <input type="text" name="solution" class="solutionbox" id="solutionbox1"><br>
-                        </div>
-                        <h2>Lösung 2</h2>
-                        <div>
-                            <label for="solutionbox2">Deine Lösung:</label><br>
+                            <label for="solutionbox2">Deine Lösung zu Aufgabe 2:</label><br>
                             <input type="text" name="solution" class="solutionbox" id="solutionbox2"><br>
-                        </div>
-                        <h2>Lösung 3</h2>
-
-                        <div>
-                            <label for="solutionbox3">Deine Lösung:</label><br>
+                            <label for="solutionbox3">Deine Lösung zu Aufgabe 3:</label><br>
                             <input type="text" name="solution" class="solutionbox" id="solutionbox3"><br><br>
                             <button type="submit" onclick="checkSolution('geometrie')">Fertig</button>
                         </div>
+                    </div>
                 </section>
             </div>
 		</main>
