@@ -145,9 +145,10 @@ nav {
 	background-image: url("imgs/mathe/pythagoras-cover.webp");
 }
 
-.thema-dummy {
-	background-image: url("imgs/mathe/tafel.webp");
+#thema-og {
+	background-image: url("../assets/imgs/physik/ohmsches-gesetz-cover.webp");
 }
+
 #thema-geometrie{
 	background-image: url("imgs/mathe/geometrie-cover.webp");
 }
