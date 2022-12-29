@@ -308,6 +308,10 @@ mark {
 	background-color: red;
 }
 
+#tr-3komma6 {
+	grid-column: 5 / 7;
+}
+
 .radiobox {
 	background-color: green;
 }

@@ -15,6 +15,7 @@ function calcSolution() {
     term = term.replaceAll('\u00D7' , '*');            // Malzeichen mit * ersetzen
     term = term.replaceAll('\u00F7' , '/');            // Divisionszeichen mit / ersetzen
     term = term.replaceAll('\u00B2' , '**2');          // hochgestellte 2 mit **2 ersetzen
+    term = term.replaceAll('\u03C0', 3.14159);           // pi-zeichen mit 3.14159 ersetzen
 
     document.getElementById("ergebnis").innerHTML = eval(term);
 }
