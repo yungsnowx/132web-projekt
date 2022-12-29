@@ -17,11 +17,25 @@ function calcSolution() {
     term = term.replaceAll('\u00B2' , '**2');          // hochgestellte 2 mit **2 ersetzen
     term = term.replaceAll('\u03C0', 3.14159);           // pi-zeichen mit 3.14159 ersetzen
 
-    document.getElementById("ergebnis").innerHTML = eval(term);
+    document.getElementById("ergebnis").innerHTML = (eval(term)).toFixed(2);
 }
 
 function copySolution() {
     document.getElementById("solutionbox").value = document.getElementById("ergebnis").innerHTML;
+}
+
+function copyMultipleSolutions() {
+    let box1 = document.getElementById("solutionbox1").value;
+    let box2 = document.getElementById("solutionbox2").value;
+    let box3 = document.getElementById("solutionbox3").value;
+
+    if (box1 == "") {
+        document.getElementById("solutionbox1").value = document.getElementById("ergebnis").innerHTML;
+    } else if (box2 == ""){
+        document.getElementById("solutionbox2").value = document.getElementById("ergebnis").innerHTML;
+    } else if (box3 == ""){
+        document.getElementById("solutionbox3").value = document.getElementById("ergebnis").innerHTML;
+    }
 }
 
 function checkSolution(aufgabe) {
@@ -32,15 +46,15 @@ function checkSolution(aufgabe) {
         case 'geometrie':
             setAnswerButton(document.getElementById("solutionbox1"), document.getElementById("solutionbox1").value == 24);
             setAnswerButton(document.getElementById("solutionbox2"), document.getElementById("solutionbox2").value == 8);
-            setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 78.5);
+            setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 78.54);
             break;
         case 'ohmschesgesetz':
             setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 0.12);
             break;
         case 'kinematik' :
-            setAnswerButton(document.getElementById("solutionbox4"), document.getElementById("solutionbox4").value == 12);
-            setAnswerButton(document.getElementById("solutionbox5"), document.getElementById("solutionbox5").value == 3.33);
-            setAnswerButton(document.getElementById("solutionbox6"), document.getElementById("solutionbox6").value == 0.93);
+            setAnswerButton(document.getElementById("solutionbox1"), document.getElementById("solutionbox1").value == 12);
+            setAnswerButton(document.getElementById("solutionbox2"), document.getElementById("solutionbox2").value == 3.33);
+            setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 933.33);
 
             setAnswerRadioButton(document.getElementById("lk-2b-ja"), document.getElementById("lk-2b-nein"), document.getElementById("lk-2b-ja").checked);
 
