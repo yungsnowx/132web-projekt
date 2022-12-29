@@ -142,7 +142,7 @@ nav {
 }
 
 #thema-mathe-sdp {
-	background-image: url("imgs/mathe/pythagoras_cover.webp");
+	background-image: url("imgs/mathe/pythagoras-cover.webp");
 }
 
 .thema-dummy {
@@ -196,26 +196,12 @@ nav {
 	align-items: center;
 }
 
-.thema-erklaerung-flex-geo {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-}
-
 #erklaerung-geo{
 	border-radius: 10px;
 	margin: 10px;
 }
 
-.thema-erklaerung-flex > img {
-	width: 70%;
-	border: solid 2px #1e90ff;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-.thema-erklaerung-flex-geo > img {
+.thema-erklaerung-flex img {
 	width: 70%;
 	border: solid 2px #1e90ff;
 	border-radius: 10px;
@@ -509,7 +495,7 @@ footer p {
 		align-items: center;
 	}
 
-	.thema-erklaerung-flex > img {
+	.thema-erklaerung-flex img {
 		text-align: center;
 		width: 500px;
 		border: solid 2px #1e90ff;
@@ -517,21 +503,8 @@ footer p {
 		margin: auto;
 	}
 
-	.thema-erklaerung-flex-geo {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		text-align: center;
-	}
-
-	.thema-erklaerung-flex-geo > img {
-		border: solid 2px #1e90ff;
-		border-radius: 10px;
-		margin: 20px;
-		margin: 10px;
-		min-width: 40%;
-		max-height: 500px;
-		width: 400px;
+	.geo-figuren {
+		width: 48vw;
 	}
 
 	#pythagoras-loesung-flex {
