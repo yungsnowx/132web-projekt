@@ -45,7 +45,7 @@ function copyMultipleSolutions() {
 
 function checkSolution(aufgabe) {
     switch (aufgabe) {
-        case 'pythagoras1':
+        case 'pythagoras':
             setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 101);
             break;
         case 'geometrie':
