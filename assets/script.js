@@ -7,6 +7,11 @@ function calcClear() {
     document.getElementById("ergebnis").innerHTML = "";
 }
 
+document.getElementById("tr-clear").ondblclick = function() {
+    document.getElementById("eingegebener-term").innerHTML = "";
+    document.getElementById("ergebnis").innerHTML = "";
+}
+
 function calcSolution() {
     let term = document.getElementById("eingegebener-term").innerHTML;
 
