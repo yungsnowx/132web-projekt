@@ -451,12 +451,54 @@ footer p {
 	padding: 4px;
 }
 
-.thema-erklarrprosa > h3{
-	color:#1e90ff;
+footer a {
+	color: dodgerblue;
 }
 
-.thema-erklarrprosa > h4{
-	text-align: left;
+#feedback-grid {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: repeat(5, 100px);
+	grid-auto-rows: auto;
+	align-items: center;
+}
+
+#feedback-grid svg {
+	height: 70px;
+	width: 70px;
+	transition-duration: 150ms;
+	justify-self: center;
+}
+
+.kontaktadresse {
+	margin: 0;
+	font-family: 'Alata', sans-serif;
+	font-size: larger;
+	font-style: italic;
+}
+
+#feedback-karte {
+	height: 25vh;
+	width: 80%;
+	border-radius: 20px;
+	border: solid 2px #1e90ff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+	grid-column: 1 / -1;
+	justify-self: center;
+}
+
+#email-button {
+	border: 0;
+	background: none;
+}
+
+#email-form{
+	justify-self: center;
+}
+
+#hauptsitz-adresse {
+	text-align: center;
+	grid-column: 1 / -1;
 }
 
 @media screen and (min-width: 900px) {
@@ -562,13 +604,9 @@ footer p {
 		margin: 16px;
 		grid-template: 100% / repeat(3, 1fr);
 	}
-}
 
-
-.thema-erklarrprosa > h3{
-	color:#1e90ff;
-}
-
-.thema-erklarrprosa > h4{
-	text-align: left;
+	#feedback-grid svg:hover {
+		height: 100px;
+		width: 100px;
+	}
 }
