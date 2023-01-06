@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Secular+One&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 body {
 	margin: 0;
 	font-family: sans-serif;
@@ -93,6 +95,18 @@ nav {
 
 .themen {
 	display: grid;
+}
+
+#slogan {
+	grid-column: 1 / -1;
+}
+
+#slogan p {
+	font-size: x-large;
+	font-family: 'Alata', sans-serif;
+	text-align: center;
+	color: rgb(20, 130, 220);
+	-webkit-text-stroke: 0.02em rgba(255, 255, 255, 0.2);
 }
 
 .themen a {
