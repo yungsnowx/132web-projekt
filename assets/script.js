@@ -43,18 +43,23 @@ function copyMultipleSolutions() {
     }
 }
 
+var correctCount = 0;
+
 function checkSolution(aufgabe) {
     switch (aufgabe) {
         case 'pythagoras':
             setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 101);
+            setAnswerText(1);
             break;
         case 'geometrie':
             setAnswerButton(document.getElementById("solutionbox1"), document.getElementById("solutionbox1").value == 24);
             setAnswerButton(document.getElementById("solutionbox2"), document.getElementById("solutionbox2").value == 8);
             setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 78.54);
+            setAnswerText(3);
             break;
         case 'ohmschesgesetz':
             setAnswerButton(document.getElementById("solutionbox"), document.getElementById("solutionbox").value == 0.12);
+            setAnswerText(1);
             break;
         case 'kinematik' :
             setAnswerButton(document.getElementById("solutionbox1"), document.getElementById("solutionbox1").value == 12);
@@ -62,7 +67,7 @@ function checkSolution(aufgabe) {
             setAnswerButton(document.getElementById("solutionbox3"), document.getElementById("solutionbox3").value == 933.33);
 
             setAnswerRadioButton(document.getElementById("lk-2b-ja"), document.getElementById("lk-2b-nein"), document.getElementById("lk-2b-ja").checked);
-
+            setAnswerText(4);
             break;
     }
 }
@@ -71,15 +76,77 @@ function setAnswerButton(solutionbox, isRight) {
     if (isRight) {
         solutionbox.style.border = 'solid 2px lawngreen';
         solutionbox.style.backgroundColor = 'rgba(0, 200, 0, 0.2)';
+        correctCount++;
     } else {
         solutionbox.style.border = 'solid 2px red';
         solutionbox.style.backgroundColor = 'rgba(200, 0, 0, 0.2)';
     }
 }
 
+function setAnswerText(anzAufgaben) {
+    let text = document.getElementById("ergebnis-textrueckmeldung");
+    switch (anzAufgaben) {
+        case 1 :
+            if (correctCount == 1) {
+                text.innerHTML = "Super! Die richtige antwort!";
+                text.style.color = 'green';
+            } else {
+                text.innerHTML = "Leider nicht richtig. Versuche es nochmal!";
+                text.style.color = 'red';
+            }
+            break;
+        case 3 :
+            switch(correctCount) {
+                case 0 :
+                    text.innerHTML = "0/3<br>Du solltest dir die Erklärungen nochmal durchlesen!";
+                    text.style.color = 'red';
+                    break;
+                case 1 :
+                    text.innerHTML = "1/3<br>Noch nicht ganz... Weiter üben!";
+                    text.style.color = 'orange';
+                    break;
+                case 2 :
+                    text.innerHTML = "2/3<br>Gut! Aber da geht noch mehr!";
+                    text.style.color = 'green';
+                    break;
+                case 3 :
+                    text.innerHTML = "3/3<br>Super!";
+                    text.style.color = 'green';
+                    break;
+            }
+            break;
+        case 4 : 
+            switch(correctCount) {
+                case 0 :
+                    text.innerHTML = "0/4<br>Du solltest dir die Erklärungen nochmal durchlesen!";
+                    text.style.color = 'red';
+                    break;
+                case 1 :
+                    text.innerHTML = "1/4<br>Noch nicht ganz... Weiter üben!";
+                    text.style.color = 'orange';
+                    break;
+                case 2 :
+                    text.innerHTML = "2/4<br>Ist ausreichend! Aber da geht noch mehr!";
+                    text.style.color = 'orange';
+                    break;
+                case 3 :
+                    text.innerHTML = "3/4<br>Gut! Aber knapp an der Perfektion gescheitert!";
+                    text.style.color = 'green';
+                    break;
+                case 4 :
+                    text.innerHTML = "4/4<br>Super!";
+                    text.style.color = 'green';
+                    break;
+            }
+            break;
+    }
+    correctCount = 0;
+}
+
 function setAnswerRadioButton(radio1, radio2, isRight) {
     if (isRight) {
         radio1.style.accentColor = 'green';
+        correctCount++;
     } else {
         radio2.style.accentColor = 'red';
     }
