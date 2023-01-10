@@ -101,8 +101,8 @@ nav {
 	grid-column: 1 / -1;
 }
 
-#slogan p {
-	font-size: x-large;
+#slogan {
+	font-size: large;
 	font-family: 'Alata', sans-serif;
 	text-align: center;
 	color: rgb(20, 130, 220);
@@ -212,12 +212,22 @@ nav {
 	align-items: center;
 }
 
-#erklaerung-geo{
+.thema-erklaerung-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+
+.thema-erklaerung-flex img {
+	width: 70%;
+	border: solid 2px #1e90ff;
 	border-radius: 10px;
 	margin: 10px;
 }
 
-.thema-erklaerung-flex img {
+.thema-erklaerung-grid img{
 	width: 70%;
 	border: solid 2px #1e90ff;
 	border-radius: 10px;
@@ -242,7 +252,7 @@ nav {
 }
 
 .geo-figur-aufgabe > img {
-	width: 170px;
+	width: 50%;
 }
 
 mark {
@@ -563,19 +573,28 @@ footer a {
 	}
 
 	.thema-erklaerung-flex img {
-		text-align: center;
 		width: 500px;
-		border: solid 2px #1e90ff;
-		border-radius: 10px;
-		margin: 10px;
+	}
+
+	.thema-erklaerung-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.thema-erklaerung-grid img{
+		width: 500px;
 	}
 
 	.geo-figuren {
 		width: 48vw;
 	}
 
-	.aufgabe-flex > .geo-figur-aufgabe {
+	.geo-figur-aufgabe {
 		width: 30%;
+	}
+
+	.geo-figur-aufgabe > img {
+		width: 75%;
 	}
 
 	#pythagoras-loesung-flex {
