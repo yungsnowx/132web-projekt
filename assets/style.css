@@ -126,7 +126,6 @@ nav {
 	margin: 4px 0;
 	height: 18vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
-	background-repeat: no-repeat;
 }
 
 .thema h2 {
@@ -392,7 +391,7 @@ mark {
 
 @keyframes animateBoy {
 	from {
-		background-position: 0px;
+		background-position: 0;
 	}
 	to {
 		background-position: 481px;
@@ -573,7 +572,7 @@ footer a {
 	}
 
 	.thema-erklaerung-flex img {
-		width: 500px;
+		max-width: 500px;
 	}
 
 	.thema-erklaerung-grid {
@@ -582,11 +581,7 @@ footer a {
 	}
 
 	.thema-erklaerung-grid img{
-		width: 500px;
-	}
-
-	.geo-figuren {
-		width: 48vw;
+		max-width: 500px;
 	}
 
 	.geo-figur-aufgabe {
