@@ -1,626 +1,622 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Secular+One&family=ZCOOL+QingKe+HuangYou&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+/* Gesamtlayout in Grid */
 body {
-	margin: 0;
-	font-family: sans-serif;
-	background-color: rgb(230, 230, 230);
-	display: grid;
-	grid-template-areas: "header"
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(230, 230, 230);
+    display: grid;
+    grid-template-areas: "header"
 						 "nav"
 						 "main"
 						 "footer";
 }
 
 header {
-	text-align: center;
-	grid-area: header;
-	background-image: url("imgs/header.webp");
+    text-align: center;
+    grid-area: header;
+    background-image: url("imgs/header.webp");
 }
 
 .imageheader {
-	margin: 0;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 nav {
-	grid-area: nav;
+    grid-area: nav;
 }
 
 #checkbox {
-	display: none;
+    display: none;
 }
 
+/* Navigationsmenü */
 .menu {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	height: 0;
-	transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 0;
+    transition-duration: 500ms;
 }
 
 .menu li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-self: center;
-	width: 100%;
-	opacity: 0;
-	visibility: hidden;
-	border-radius: 10px;
-	margin-bottom: 2px;
-	transition-duration: 200ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    transition-duration: 200ms;
 }
 
 .menu li a {
-	text-align: center;
-	padding: 16px 20px;
-	width: 100%;
-	align-self: center;
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-	-webkit-text-stroke: 0.02em white;
-	transition-duration: 500ms;
+    text-align: center;
+    padding: 16px 20px;
+    width: 100%;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    -webkit-text-stroke: 0.02em white;
+    transition-duration: 500ms;
 }
 
 .menu li a:hover {
-	background-color: rgba(0, 165, 255, 0.5);
-	border-radius: 10px;
+    background-color: rgba(0, 165, 255, 0.5);
+    border-radius: 10px;
 }
 
+/* Toggle für mobile Navigationsmenü */
 .toggle {
-	display: block;
-	text-align: center;
-	line-height: 40px;
-	cursor: pointer;
-	font-size: 20px;
-	background-color: lightgray;
-	margin-bottom: 16px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: lightgray;
+    margin-bottom: 16px;
 }
 
 #checkbox:checked + label .menu {
-	height: 220px;
+    height: 220px;
 }
 
 #checkbox:checked + label .menu li {
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .themen {
-	display: grid;
+    display: grid;
 }
 
 #slogan {
-	grid-column: 1 / -1;
-}
-
-#slogan {
-	font-size: large;
-	font-family: 'Alata', sans-serif;
-	text-align: center;
-	color: rgb(20, 130, 220);
-	-webkit-text-stroke: 0.02em rgba(255, 255, 255, 0.2);
+    font-size: medium;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    color: rgb(20, 130, 220);
+    -webkit-text-stroke: 0.02em rgba(255, 255, 255, 0.2);
 }
 
 .themen a {
-	color: black;
-	text-decoration: none;
-	border-radius: 4px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 .thema {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-align: center;
-	border-radius: 4px;
-	margin: 4px 0;
-	height: 18vh;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 4px;
+    margin: 4px 0;
+    height: 18vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
 }
 
 .thema h2 {
-	padding: 4px;
-	margin: 0;
-	border-radius: 0 0 4px 4px;
-	background-color: rgba(230, 230, 230, 0.7);
-	width: 100%;
-	transition: padding 250ms, background-color 250ms;
+    padding: 4px;
+    margin: 0;
+    border-radius: 0 0 4px 4px;
+    background-color: rgba(230, 230, 230, 0.7);
+    width: 100%;
+    transition: padding 250ms, background-color 250ms;
 }
 
 .thema:hover h2 {
-	padding: 8px;
-	background-color: rgba(230, 230, 230, 0.9);
+    padding: 8px;
+    background-color: rgba(230, 230, 230, 0.9);
 }
 
 #thema-mathe {
-	background-image: url("imgs/mathe/mathe-cover.webp");
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-image: url("imgs/mathe/mathe-cover.webp");
 }
 
 #thema-physik {
-	background-image: url("imgs/physik/physic_theme.webp");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+    background-image: url("imgs/physik/physic_theme.webp");
+    background-position: center;
 }
 
 #thema-mathe-sdp {
-	background-image: url("imgs/mathe/pythagoras-cover.webp");
+    background-image: url("imgs/mathe/pythagoras-cover.webp");
 }
 
 #thema-og {
-	background-image: url("../assets/imgs/physik/ohmsches-gesetz-cover.webp");
+    background-image: url("../assets/imgs/physik/ohmsches-gesetz-cover.webp");
 }
 
-#thema-geometrie{
-	background-image: url("imgs/mathe/geometrie-cover.webp");
+#thema-geometrie {
+    background-image: url("imgs/mathe/geometrie-cover.webp");
 }
 
 #thema-lk {
-	background-image: url("imgs/physik/lk-theme.webp");
-	background-position: center;
+    background-image: url("imgs/physik/lk-theme.webp");
+    background-position: center;
 }
-/*Aufgabenblatt*/
 
+/* Aufgabenblatt */
 .aufgaben-container {
-	display: grid;
-	justify-content: stretch;
-	grid-gap: 5px;
-	padding: 5px;
-	grid-template-areas: "thema-erklaerung"
+    display: grid;
+    justify-content: stretch;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-template-areas: "thema-erklaerung"
 						 "aufgabenstellung"
 						 "loesung";
 }
 
 .aufgaben-container > section {
-	border: solid 5px dodgerblue;
-	border-radius: 10px;
-	background-color: white;
-	text-align: center;
+    border: solid 5px dodgerblue;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
 }
 
 .themaerklaerung {
-	grid-area: thema-erklaerung;
+    grid-area: thema-erklaerung;
 }
 
 .aufgabe {
-	grid-area: aufgabenstellung;
-	padding: 16px;
+    grid-area: aufgabenstellung;
+    padding: 16px;
 }
 
 .loesungsbereich {
-	grid-area: loesung;
-	padding: 16px;
+    grid-area: loesung;
+    padding: 16px;
 }
 
 .thema-erklaerung-flex {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .thema-erklaerung-grid {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	justify-content: center;
-	align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 .thema-erklaerung-flex img {
-	width: 70%;
-	border: solid 2px #1e90ff;
-	border-radius: 10px;
-	margin: 10px;
+    width: 70%;
+    border: solid 2px #1e90ff;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-.thema-erklaerung-grid img{
-	width: 70%;
-	border: solid 2px #1e90ff;
-	border-radius: 10px;
-	margin: 10px;
+.thema-erklaerung-grid img {
+    width: 70%;
+    border: solid 2px #1e90ff;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .thema-erklaerprosa {
-	margin: 20px;
+    margin: 20px;
 }
 
 .aufgabe-flex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px;
 }
 
 .aufgabe-flex > img {
-	width: 80%;
+    width: 80%;
 }
 
 .geo-figur-aufgabe > img {
-	width: 50%;
+    width: 50%;
 }
 
 mark {
-	background-color: rgba(124, 252, 0, 0.5);
-	border-radius: 10px;
-	padding: 2px;
+    background-color: rgba(124, 252, 0, 0.5);
+    border-radius: 10px;
+    padding: 2px;
 }
 
 #pythagoras-loesung-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; 
-	margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .taschenrechner-container {
-	background-color: rgb(45, 45, 45);
-	display: grid;
-	justify-content: center;
-	grid-template-columns: repeat(6, 50px);
-	grid-template-rows: repeat(6, 50px);
-	grid-gap: 5px;
-	width: 325px;
-	padding: 5px;
-	margin: 10px;
-	border-radius: 10px;
-	border: solid 2px black;
+    background-color: rgb(45, 45, 45);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 5px;
+    width: 325px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
 }
 
 .taschenrechner-container > div {
-	display: flex;
-	flex-direction: row;
-	box-shadow: 1px 1px 1px 1px black;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
-.taschenrechner-container > [class^="tr"] { 
-	border: solid 2px black;
-	border-radius: 10px;
-	color: white;
-	font-size: 2em;
-	justify-content: center;
-	align-items: center;
+.taschenrechner-container > [class^="tr"] {
+    border: solid 2px black;
+    border-radius: 10px;
+    color: white;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
 }
 
 .tr-button {
-	background-color: gray;
+    background-color: gray;
 }
 
 #eingegebener-term, #ergebnis {
-	font-family: 'ZCOOL QingKe HuangYou', sans-serif;;
-	border: solid 2px black;
-	border-radius: 10px;
-	color: black;
-	font-size: 2em;
-	grid-column: 1 / -1;
-	background-color: white;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 5px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;;
+    border: solid 2px black;
+    border-radius: 10px;
+    color: black;
+    font-size: 2em;
+    grid-column: 1 / -1;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
 }
 
 .tr-ziffer-button {
-	background-color: rgb(59, 59, 59);
+    background-color: rgb(59, 59, 59);
 }
 
 #tr-istgleich {
-	grid-column: 3 / 5;
-	background-color: blue;
+    grid-column: 3 / 5;
+    background-color: blue;
 }
 
 #tr-cp {
-	grid-column: 5 / 7;
-	background-color: blue;
-	font-size: 1em;
+    grid-column: 5 / 7;
+    background-color: blue;
+    font-size: 1em;
 }
 
 #tr-clear {
-	background-color: red;
+    background-color: red;
 }
 
 #tr-3komma6 {
-	grid-column: 5 / 7;
+    grid-column: 5 / 7;
 }
 
 .radiobox {
-	background-color: green;
+    background-color: green;
 }
 
 .solutionbox {
-	font-size: 1.5em;
-	color: black;
-	margin: 10px auto;
-	border: solid 2px dodgerblue;
+    font-size: 1.5em;
+    color: black;
+    margin: 10px auto;
+    border: solid 2px dodgerblue;
 }
 
 
-/*Aufgabenblatt Ende*/
+/* Aufgabenblatt Ende */
 
-/*lineare Kinematik*/
+/* lineare Kinematik */
 
 #notwendige-formeln {
-	margin: 20px;
+    margin: 20px;
 }
 
 #lk-aufgabe-flex {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #lk-road {
-	margin-top: 50px;
-	position: relative;
-	width: 100%;
-	height: 100px;
-	background: linear-gradient(90deg,
-	                          rgba(255, 255, 255, 0.7),
-							  rgba(0, 0, 0, 0.2),
-							  rgba(0, 0, 0, 0.4),
-							  rgba(0, 0, 0, 0.6),
-							  rgba(0, 0, 0, 0.8));
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8));
 }
 
 #lk-running-boy {
-	position: absolute;
-	left: 10%;
-	bottom: 10%;
-	height: 150px;
-	width: calc(472px / 5);
-	background: url(../assets/imgs/physik/lk-running-man.png);
-	overflow: hidden;
-	animation: animateBoy 0.5s steps(5) infinite;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    height: 150px;
+    width: calc(472px / 5);
+    background: url(../assets/imgs/physik/lk-running-man.png);
+    overflow: hidden;
+    animation: animateBoy 0.5s steps(5) infinite;
 }
 
+/* Laufanimation in lineare Kinematik */
 @keyframes animateBoy {
-	from {
-		background-position: 0;
-	}
-	to {
-		background-position: 481px;
-	}
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 481px;
+    }
 }
 
 main {
-	grid-area: main;
+    grid-area: main;
 }
 
 .mid {
-	margin: 0 1.5em;
+    margin: 0 1.5em;
 }
 
 .rating {
-	border-radius: 8px;
-	background-color: white;
-	padding: 16px 0;
-	margin-top: 16px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 16px 0;
+    margin-top: 16px;
 }
 
 .rating h2 {
-	text-align: center;
+    text-align: center;
 }
 
 .rating-items {
-	margin: 0 32px;
-	display: grid;
-	grid-template: repeat(3, 1fr) / 100%;
-	text-align: center;
+    margin: 0 32px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 100%;
+    text-align: center;
 }
 
 .rating-item {
-	margin: 4px;
+    margin: 4px;
 }
 
 input, textarea {
-	margin: 4px 10px 16px 0;
-	padding: 6px;
-	border: 2px solid grey;
-	border-radius: 6px;
+    margin: 4px 10px 16px 0;
+    padding: 6px;
+    border: 2px solid grey;
+    border-radius: 6px;
 }
 
 button {
-	background-color: rgb(31, 143, 255);
-	color: white;
-	border-radius: 6px;
-	border: 0;
-	padding: 8px 25px;
-	cursor: pointer;
+    background-color: rgb(31, 143, 255);
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    padding: 8px 25px;
+    cursor: pointer;
 }
 
 button:hover {
-	background-color: rgb(88, 171, 255);
+    background-color: rgb(88, 171, 255);
 }
 
 footer {
-	grid-area: footer;
-	background-color: #333333;
-	color: white;
-	margin-top: 16px;
-	padding: 4px;
+    grid-area: footer;
+    background-color: #333333;
+    color: white;
+    margin-top: 16px;
+    padding: 4px;
 }
 
 footer p {
-	padding: 4px;
+    padding: 4px;
 }
 
 footer a {
-	color: dodgerblue;
+    color: dodgerblue;
 }
 
 #feedback-grid {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: repeat(5, 100px);
-	grid-auto-rows: auto;
-	align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(5, 100px);
+    grid-auto-rows: auto;
+    align-items: center;
 }
 
 #feedback-grid svg {
-	height: 70px;
-	width: 70px;
-	transition-duration: 150ms;
-	justify-self: center;
+    height: 70px;
+    width: 70px;
+    transition-duration: 150ms;
+    justify-self: center;
 }
 
 .kontaktadresse {
-	margin: 0;
-	font-family: 'Alata', sans-serif;
-	font-size: larger;
-	font-style: italic;
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    font-size: larger;
+    font-style: italic;
 }
 
 #feedback-karte {
-	height: 25vh;
-	width: 80%;
-	border-radius: 20px;
-	border: solid 2px #1e90ff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
-	grid-column: 1 / -1;
-	justify-self: center;
+    height: 25vh;
+    width: 80%;
+    border-radius: 20px;
+    border: solid 2px #1e90ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    grid-column: 1 / -1;
+    justify-self: center;
 }
 
 #email-button {
-	border: 0;
-	background: none;
+    border: 0;
+    background: none;
 }
 
-#email-form{
-	justify-self: center;
+#email-form {
+    justify-self: center;
 }
 
 #hauptsitz-adresse {
-	text-align: center;
-	grid-column: 1 / -1;
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 @media screen and (min-width: 900px) {
-	.toggle {
-		display: none;
-	}
+    .toggle {
+        display: none;
+    }
 
-	.menu {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		height: 50px;
-		border-bottom: 0;
-		margin: 8px 0;
-	}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50px;
+        border-bottom: 0;
+        margin: 8px 0;
+    }
 
-	.menu li {
-		border-bottom: 0;
-		width: auto;
-		opacity: 1;
-		visibility: visible;
-		margin: 0 10px;	
-	}
+    .menu li {
+        border-bottom: 0;
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+        margin: 0 10px;
+    }
 
-	#checkbox:checked + label .menu {
-		height: 50px;
-	}
+    #checkbox:checked + label .menu {
+        height: 50px;
+    }
 
-	main {
-		padding: 0 20px;
-	}
+    main {
+        padding: 0 20px;
+    }
 
-	.mid {
-		margin: 0 auto;
-		max-width: 1200px;
-	}
+    .mid {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
 
-	.themen {
-		display: grid;
-		grid-template: 50% 50% / 50% 50%;
-		margin-top: 8px;
-		padding: 0;
-		align-content: center;
-	}
+    .themen {
+        display: grid;
+        grid-template: 50% 50% / 50% 50%;
+        margin-top: 8px;
+        padding: 0;
+        align-content: center;
+    }
 
-	.aufgaben-container {
-		display: grid;
-		justify-content: stretch;
-		grid-gap: 5px;
-		padding: 2px;
-		grid-template-areas: "thema-erklaerung thema-erklaerung"
+    .aufgaben-container {
+        display: grid;
+        justify-content: stretch;
+        grid-gap: 5px;
+        padding: 2px;
+        grid-template-areas: "thema-erklaerung thema-erklaerung"
 							 "aufgabenstellung loesung";
-		grid-template-columns: 50% 50%;
-	}
+        grid-template-columns: 50% 50%;
+    }
 
-	.thema-erklaerung-flex {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
+    .thema-erklaerung-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-	.thema-erklaerung-flex img {
-		max-width: 500px;
-	}
+    .thema-erklaerung-flex img {
+        max-width: 500px;
+    }
 
-	.thema-erklaerung-grid {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-	}
+    .thema-erklaerung-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
-	.thema-erklaerung-grid img{
-		max-width: 500px;
-	}
+    .thema-erklaerung-grid img {
+        max-width: 500px;
+    }
 
-	.geo-figur-aufgabe {
-		width: 30%;
-	}
+    .geo-figur-aufgabe {
+        width: 30%;
+    }
 
-	.geo-figur-aufgabe > img {
-		width: 75%;
-	}
+    .geo-figur-aufgabe > img {
+        width: 75%;
+    }
 
-	#pythagoras-loesung-flex {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+    #pythagoras-loesung-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-	[class^="tr"]:hover {
-		background-color: #1e90ff;
-		color: black;
-		cursor: pointer;
-	}
+    [class^="tr"]:hover {
+        background-color: #1e90ff;
+        color: black;
+        cursor: pointer;
+    }
 
-	.thema {
-		margin: 4px;
-	}
+    .thema {
+        margin: 4px;
+    }
 
-	.rating {
-		margin-top: 16px;
-	}
+    .rating {
+        margin-top: 16px;
+    }
 
-	.rating-items {
-		margin: 16px;
-		grid-template: 100% / repeat(3, 1fr);
-	}
+    .rating-items {
+        margin: 16px;
+        grid-template: 100% / repeat(3, 1fr);
+    }
 
-	#feedback-grid svg:hover {
-		height: 100px;
-		width: 100px;
-	}
+    #feedback-grid svg:hover {
+        height: 100px;
+        width: 100px;
+    }
 }
