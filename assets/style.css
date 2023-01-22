@@ -67,7 +67,6 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    -webkit-text-stroke: 0.02em white;
     transition-duration: 500ms;
 }
 
